@@ -1,0 +1,13 @@
+{
+  "itemGroup.ninhosawmod": "Example Mod Tab",
+  "block.ninhosawmod.example_block": "Example Block",
+  "item.ninhosawmod.example_item": "Example Item",
+
+  "ninhosawmod.configuration.title": "Ninho's Awesome Mod Configs",
+  "ninhosawmod.configuration.section.ninhosawmod.common.toml": "Ninho's Awesome Mod Configs",
+  "ninhosawmod.configuration.section.ninhosawmod.common.toml.title": "Ninho's Awesome Mod Configs",
+  "ninhosawmod.configuration.items": "Item List",
+  "ninhosawmod.configuration.logDirtBlock": "Log Dirt Block",
+  "ninhosawmod.configuration.magicNumberIntroduction": "Magic Number Text",
+  "ninhosawmod.configuration.magicNumber": "Magic Number"
+}
