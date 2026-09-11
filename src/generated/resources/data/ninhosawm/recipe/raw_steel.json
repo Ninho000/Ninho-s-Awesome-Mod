@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "steel",
+  "ingredients": [
+    "#minecraft:coals",
+    "#minecraft:coals",
+    "minecraft:iron_ingot",
+    "minecraft:iron_ingot"
+  ],
+  "result": {
+    "count": 2,
+    "id": "ninhosawm:raw_steel"
+  }
+}

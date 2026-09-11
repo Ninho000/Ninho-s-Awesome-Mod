@@ -1,0 +1,12 @@
+{
+"creativetab.ninhosawm.mod_parts": "@Mod Parts",
+
+"item.ninhosawm.raw_steel": "Raw Steel",
+  "tooltip.ninhosawm.raw_steel": "A complex metal alloy\nOnly smelted on §fBlast Furnice§r",
+"item.ninhosawm.steel_ingot": "Steel Ingot",
+
+"item.ninhosawm.steel_pickaxe": "Steel Pickaxe",
+"item.ninhosawm.steel_shovel": "Steel Shovel",
+"item.ninhosawm.steel_axe": "Steel Axe",
+"item.ninhosawm.steel_hoe": "Steel Hoe"
+}

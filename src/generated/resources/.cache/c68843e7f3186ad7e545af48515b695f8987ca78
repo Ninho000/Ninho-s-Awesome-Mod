@@ -1,0 +1,13 @@
+// 26.2	2026-09-10T22:59:33.7628001	Model Definitions - ninhosawm
+ddd68d9691d8cbfeecc291a697212c1de3fbdd65 assets/ninhosawm/items/raw_steel.json
+f8782b51343397c6a9364db08782c7e6b1e37903 assets/ninhosawm/items/steel_axe.json
+c489ef0ef636ba2e46092796ca310c959acc0ff6 assets/ninhosawm/items/steel_hoe.json
+443925a5ba951f59e974fc95d3e80301813ccb3e assets/ninhosawm/items/steel_ingot.json
+5389e4b1245c923b986d1c2a048fd10a4c2e2892 assets/ninhosawm/items/steel_pickaxe.json
+05468a124bbe99a47108a0c0c44080c9f3cb38fb assets/ninhosawm/items/steel_shovel.json
+e3dc323a7bf6a1a1e8e5f1519aac5d947bd7d703 assets/ninhosawm/models/item/raw_steel.json
+fab4554c2d6251c09f51b664d62454b0f4cb2051 assets/ninhosawm/models/item/steel_axe.json
+562b2722be661129afe9cbc302fb2d60e8f227fc assets/ninhosawm/models/item/steel_hoe.json
+e72c9ce7e73274389df77411f7265ddfbf62cbd5 assets/ninhosawm/models/item/steel_ingot.json
+ad63b70b0410e15b948ce31e1633430d64eb46a3 assets/ninhosawm/models/item/steel_pickaxe.json
+e05f988d905d797bd63f0e773808c1266025b33e assets/ninhosawm/models/item/steel_shovel.json
