@@ -1,0 +1,12 @@
+{
+"creativetab.ninhosawm.mod_parts": "@Mod Parts",
+
+"item.ninhosawm.raw_steel": "Aço Bruto",
+  "tooltip.ninhosawm.raw_steel": "§7Uma liga metálica complexa que só pode\n ser fundida em um §fAlto-Forno§r",
+"item.ninhosawm.steel_ingot": "Lingote de Aço",
+
+"item.ninhosawm.steel_pickaxe": "Picareta de Aço",
+"item.ninhosawm.steel_shovel": "Pá de Aço",
+"item.ninhosawm.steel_axe": "Machado de Aço",
+"item.ninhosawm.steel_hoe": "Enxada de Aço"
+}

@@ -1,0 +1,7 @@
+// 26.2	2026-09-10T22:59:33.7597973	Tags for minecraft:item mod id ninhosawm
+8eb8c70a9fc41fb9cd32e252f5b2bc113825fa5d data/minecraft/tags/item/axes.json
+eb30ce4688d63756eb91851b80e499af8bf7d23c data/minecraft/tags/item/hoes.json
+984714b99f3e0202266168aca5a9c5d1b0d94024 data/minecraft/tags/item/pickaxes.json
+89d196b081762c9b720190ff7132cdf8b455a682 data/minecraft/tags/item/shovels.json
+ca47015648f40952861a7f024f6f062ac53a0579 data/ninhosawm/tags/item/steel.json
+4e49a8b5331f7e38bcfa8950588635b851d263d7 data/ninhosawm/tags/item/steel_repairable.json
