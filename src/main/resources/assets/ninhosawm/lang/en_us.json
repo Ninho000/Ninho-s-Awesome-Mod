@@ -1,12 +1,31 @@
 {
 "creativetab.ninhosawm.mod_parts": "@Mod Parts",
 
+"": "================== Items and Components =======================",
 "item.ninhosawm.raw_steel": "Raw Steel",
-  "tooltip.ninhosawm.raw_steel": "A complex metal alloy\nOnly smelted on §fBlast Furnice§r",
+  "tooltip.ninhosawm.raw_steel": "§7A complex metal alloy \nOnly smelted on §fBlast Furnice§r",
 "item.ninhosawm.steel_ingot": "Steel Ingot",
+  "tooltip.ninhosawm.steel_ingot": "§7A stronger metal alloy \nused in many things",
 
+"item.ninhosawm.basic_gears": "Baisc Gears",
+  "tooltip.ninhosawm.basic_gears": "[Tier I] \n§7most basic gear set",
+
+"item.ninhosawm.fluid_container": "Starter Container",
+  "tooltip.ninhosawm.fluid_container": "§7Most basic fluid container",
+
+"item.ninhosawm.boiler": "Boiler I",
+  "tooltip.ninhosawm.boiler": "§7Most basic boiler power system",
+
+"item.ninhosawm.iron_drill": "Iron Drill",
+  "tooltip.ninhosawm.iron_drill": "§7Basic drill §ftool§r§7 for initial farm-contraptions",
+
+"": "========================= Tools ===============================",
 "item.ninhosawm.steel_pickaxe": "Steel Pickaxe",
 "item.ninhosawm.steel_shovel": "Steel Shovel",
 "item.ninhosawm.steel_axe": "Steel Axe",
-"item.ninhosawm.steel_hoe": "Steel Hoe"
+"item.ninhosawm.steel_hoe": "Steel Hoe",
+
+"": "================ Mineable Factory Machinery ===================",
+"item.ninhosawm.cobblestone_generator": "Cobblestone Generator T.I",
+  "tooltip.ninhosawm.cobblestone_generator": "§o\"Starting from the basics\"§r\n §7Simple Cobblestone Generator that get a few stones per Hour"
 }
