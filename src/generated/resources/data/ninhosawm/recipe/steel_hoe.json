@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "tool",
+  "key": {
+    "A": "ninhosawm:steel_ingot",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    "AA",
+    " S",
+    " S"
+  ],
+  "result": {
+    "id": "ninhosawm:steel_hoe"
+  }
+}
