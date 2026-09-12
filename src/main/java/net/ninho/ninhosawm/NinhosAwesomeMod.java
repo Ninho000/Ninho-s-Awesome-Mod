@@ -1,5 +1,7 @@
 package net.ninho.ninhosawm;
 
+import net.ninho.ninhosawm.block.ModBlocks;
+import net.ninho.ninhosawm.blockentity.ModBlockEntities;
 import net.ninho.ninhosawm.creativemodetab.ModCreativeModeTabs;
 import net.ninho.ninhosawm.item.ModItems;
 import org.slf4j.Logger;
@@ -28,6 +30,8 @@ public class NinhosAwesomeMod {
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab

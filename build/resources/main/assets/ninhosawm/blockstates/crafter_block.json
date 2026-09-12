@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ninhosawm:block/crafter_block"
+    },
+    "facing=east": {
+      "model": "ninhosawm:block/crafter_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ninhosawm:block/crafter_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ninhosawm:block/crafter_block",
+      "y": 270
+    }
+  }
+}
