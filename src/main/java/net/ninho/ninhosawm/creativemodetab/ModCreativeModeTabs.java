@@ -1,6 +1,7 @@
 package net.ninho.ninhosawm.creativemodetab;
 
 import net.ninho.ninhosawm.NinhosAwesomeMod;
+import net.ninho.ninhosawm.block.ModBlocks;
 import net.ninho.ninhosawm.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -31,6 +32,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STEEL_AXE);
                         output.accept(ModItems.STEEL_SHOVEL);
                         output.accept(ModItems.STEEL_HOE);
+
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> CONTRAPTIONS = CREATIVE_MODE_TABS.register("contraptions",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CRAFTER_BLOCK.get()))
+                    .title(Component.translatable("creativetab.ninhosawm.contraptions"))
+                    .withTabsBefore(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "mod_parts"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        //============= CRAFTERS ===============
+                        output.accept(ModBlocks.CRAFTER_BLOCK);
+                        output.accept(ModBlocks.COBBLESTONE_GENERATOR);
 
                     }).build());
 

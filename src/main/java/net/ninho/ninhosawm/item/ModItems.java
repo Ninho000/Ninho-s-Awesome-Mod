@@ -45,8 +45,6 @@ public class ModItems {
 //=============================================================================================================
 //                                         Mineable Factory Machinery
 //=============================================================================================================
-    public static final DeferredItem<Item> COBBLESTONE_GENERATOR = ITEMS.registerItem("cobblestone_generator",
-            properties -> new ToolTip(properties, "cobblestone_generator"));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

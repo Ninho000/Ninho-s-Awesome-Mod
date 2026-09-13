@@ -1,10 +1,24 @@
-// 26.2	2026-09-10T22:59:33.7628001	Model Definitions - ninhosawm
+// 26.2	2026-09-12T21:55:15.2598638	Model Definitions - ninhosawm
+769dcd76586aaf0610fbd2f2442f9190e610e471 assets/ninhosawm/blockstates/cobblestone_generator.json
+598b0224bc54927a347a80d88f143cbb25e77829 assets/ninhosawm/blockstates/crafter_block.json
+714cad16627cc454015fbbf47029998d4fa2a546 assets/ninhosawm/items/basic_gears.json
+6ba4f57d02860224d54dc0643b6e05efa923c279 assets/ninhosawm/items/basic_storage.json
+c34e6446e6f9bfe29ee4afe13a664fc53aea79aa assets/ninhosawm/items/boiler.json
+5a19bdf4988c7426f091729f133d43475c4d2fe5 assets/ninhosawm/items/cobblestone_generator.json
+f3e0f40f08319aa882f82359685abf56a602d608 assets/ninhosawm/items/crafter_block.json
+c6c4f3ec36815f75b69b6889561af6bb456d5153 assets/ninhosawm/items/fluid_container.json
+8e3e4ff7e63710af004c93db24dc8a2c498044a8 assets/ninhosawm/items/iron_drill.json
 ddd68d9691d8cbfeecc291a697212c1de3fbdd65 assets/ninhosawm/items/raw_steel.json
 f8782b51343397c6a9364db08782c7e6b1e37903 assets/ninhosawm/items/steel_axe.json
 c489ef0ef636ba2e46092796ca310c959acc0ff6 assets/ninhosawm/items/steel_hoe.json
 443925a5ba951f59e974fc95d3e80301813ccb3e assets/ninhosawm/items/steel_ingot.json
 5389e4b1245c923b986d1c2a048fd10a4c2e2892 assets/ninhosawm/items/steel_pickaxe.json
 05468a124bbe99a47108a0c0c44080c9f3cb38fb assets/ninhosawm/items/steel_shovel.json
+59077acaf9c740c64121f1a35588b97f8f80e67c assets/ninhosawm/models/item/basic_gears.json
+e3dac85d69bb089153667890747ff3007a1f06f3 assets/ninhosawm/models/item/basic_storage.json
+baf9beab60fbc16528f5eedeb29e9eb9efcc57da assets/ninhosawm/models/item/boiler.json
+6dee786913c87fdbc8ba9522a119873bb755df03 assets/ninhosawm/models/item/fluid_container.json
+b71d0b05091249232c2e7dcb989c2dae18606641 assets/ninhosawm/models/item/iron_drill.json
 e3dc323a7bf6a1a1e8e5f1519aac5d947bd7d703 assets/ninhosawm/models/item/raw_steel.json
 fab4554c2d6251c09f51b664d62454b0f4cb2051 assets/ninhosawm/models/item/steel_axe.json
 562b2722be661129afe9cbc302fb2d60e8f227fc assets/ninhosawm/models/item/steel_hoe.json

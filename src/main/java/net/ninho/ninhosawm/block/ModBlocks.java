@@ -2,14 +2,17 @@ package net.ninho.ninhosawm.block;
 
 
 import net.ninho.ninhosawm.NinhosAwesomeMod;
-import net.ninho.ninhosawm.block.custom.CompactCrafterBlockEntity;
+import net.ninho.ninhosawm.block.custom.*;
+import net.ninho.ninhosawm.block.custom.CrafterBlock;
 import net.ninho.ninhosawm.item.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -22,20 +25,25 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(NinhosAwesomeMod.MOD_ID);
 
+//==============================================================================================================================
 
+        public static final DeferredBlock<Block> CRAFTER_BLOCK = registerBlock("crafter_block",
+            properties -> new CrafterBlock(properties.strength(1.5F).requiresCorrectToolForDrops().noOcclusion()));
+    public static final DeferredBlock<Block> COBBLESTONE_GENERATOR = registerBlock("cobblestone_generator",
+            properties -> new CobblestoneGenerator(properties.strength(2F).requiresCorrectToolForDrops()
+                    .noOcclusion().lightLevel(state -> 20)));
 
+//==============================================================================================================================
+
+        public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> function, Component... components) {
         DeferredBlock<T> toReturn = BLOCKS.registerBlock(name, function);
         registerBlockItem(name, toReturn, components);
         return toReturn;
     }
-
-    public static final DeferredBlock<Block> COMPACT_CRAFTER_BLOCK = registerBlock("compact_crafter_block",
-            properties -> new CompactCrafterBlockEntity(properties.strength(2F).requiresCorrectToolForDrops()));
-
-
-
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block, Component... components) {
         ModItems.ITEMS.registerItem(name, properties -> new BlockItem(block.get(), properties.useBlockDescriptionPrefix()) {
