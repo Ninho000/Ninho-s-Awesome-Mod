@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
 
                         //============= CRAFTERS ===============
                         output.accept(ModBlocks.CRAFTER_BLOCK);
+                        output.accept(ModBlocks.COBBLESTONE_GENERATOR);
 
                     }).build());
 

@@ -28,6 +28,6 @@
 
 "": "================ Mineable Factory Machinery ===================",
 "block.ninhosawm.crafter_block": "Blueprint Table",
-"item.ninhosawm.cobblestone_generator": "Cobblestone Generator T.I",
+"block.ninhosawm.cobblestone_generator": "Cobblestone Generator T.I",
   "tooltip.ninhosawm.cobblestone_generator": "§o\"Starting from the basics\"§r\n §7Simple Cobblestone Generator that get a few stones per Hour"
 }

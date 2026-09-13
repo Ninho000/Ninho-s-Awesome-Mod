@@ -4,6 +4,8 @@ import net.ninho.ninhosawm.block.ModBlocks;
 import net.ninho.ninhosawm.blockentity.ModBlockEntities;
 import net.ninho.ninhosawm.creativemodetab.ModCreativeModeTabs;
 import net.ninho.ninhosawm.item.ModItems;
+import net.ninho.ninhosawm.menu.ModMenuScreens;
+import net.ninho.ninhosawm.menu.ModMenuTypes;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -32,6 +34,8 @@ public class NinhosAwesomeMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModMenuScreens.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab

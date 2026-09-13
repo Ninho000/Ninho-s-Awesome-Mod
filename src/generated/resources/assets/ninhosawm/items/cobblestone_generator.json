@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "ninhosawm:item/cobblestone_generator"
+    "model": "ninhosawm:block/cobblestone_generator"
   }
 }
