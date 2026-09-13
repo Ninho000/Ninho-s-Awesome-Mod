@@ -2,6 +2,7 @@ package net.ninho.ninhosawm.blockentity;
 
 import net.ninho.ninhosawm.NinhosAwesomeMod;
 import net.ninho.ninhosawm.block.ModBlocks;
+import net.ninho.ninhosawm.blockentity.custom.CobblestoneGeneratorEntity;
 import net.ninho.ninhosawm.blockentity.custom.CrafterBlockEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -17,6 +18,9 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<CrafterBlockEntity>> CRAFTER_BLOCK_BE =
             BLOCK_ENTITIES.register("crafter_block_be", () -> new BlockEntityType<>(
                     CrafterBlockEntity::new, ModBlocks.CRAFTER_BLOCK.get()));
+    public static final Supplier<BlockEntityType<CobblestoneGeneratorEntity>> COBBLESTONE_GENERATOR_BE =
+            BLOCK_ENTITIES.register("cobblestone_generator_be", () -> new BlockEntityType<>(
+                    CobblestoneGeneratorEntity::new, ModBlocks.COBBLESTONE_GENERATOR.get()));
 
 
     public static void register(IEventBus eventBus) {

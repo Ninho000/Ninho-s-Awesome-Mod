@@ -2,6 +2,7 @@ package net.ninho.ninhosawm.block;
 
 
 import net.ninho.ninhosawm.NinhosAwesomeMod;
+import net.ninho.ninhosawm.block.custom.*;
 import net.ninho.ninhosawm.block.custom.CrafterBlock;
 import net.ninho.ninhosawm.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -27,7 +28,10 @@ public class ModBlocks {
 //==============================================================================================================================
 
         public static final DeferredBlock<Block> CRAFTER_BLOCK = registerBlock("crafter_block",
-            properties -> new CrafterBlock(properties.strength(2F).requiresCorrectToolForDrops().noOcclusion()));
+            properties -> new CrafterBlock(properties.strength(1.5F).requiresCorrectToolForDrops().noOcclusion()));
+    public static final DeferredBlock<Block> COBBLESTONE_GENERATOR = registerBlock("cobblestone_generator",
+            properties -> new CobblestoneGenerator(properties.strength(2F).requiresCorrectToolForDrops()
+                    .noOcclusion().lightLevel(state -> 20)));
 
 //==============================================================================================================================
 

@@ -34,6 +34,6 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createNonTemplateModelBlock(ModBlocks.CRAFTER_BLOCK.get());
 
 //======================================== CONTRAPTIONS =============================================
-        itemModels.generateFlatItem(ModItems.COBBLESTONE_GENERATOR.get(), ModelTemplates.FLAT_ITEM);
+        blockModels.createNonTemplateModelBlock(ModBlocks.COBBLESTONE_GENERATOR.get());
     }
 }

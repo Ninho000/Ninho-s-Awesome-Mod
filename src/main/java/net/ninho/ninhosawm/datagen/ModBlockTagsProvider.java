@@ -24,6 +24,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         addBlock(BlockTags.MINEABLE_WITH_AXE,
                 ModBlocks.CRAFTER_BLOCK.get());
+
+        addBlock(BlockTags.MINEABLE_WITH_PICKAXE,
+                ModBlocks.COBBLESTONE_GENERATOR.get());
     }
     private void addBlock(TagKey<Block> tag, Block... blocks) {
         for (Block block : blocks) {

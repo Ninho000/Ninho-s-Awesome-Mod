@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
 
         dropSelf(ModBlocks.CRAFTER_BLOCK.get());
+        dropSelf(ModBlocks.COBBLESTONE_GENERATOR.get());
 
     }
 
