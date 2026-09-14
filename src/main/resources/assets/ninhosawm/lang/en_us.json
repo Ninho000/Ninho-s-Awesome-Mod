@@ -1,6 +1,7 @@
 {
 "creativetab.ninhosawm.mod_parts": "@Mod Parts",
 "creativetab.ninhosawm.contraptions": "Contraptions",
+"tooltip.ninhosawm.press_shift": "§7\n\npress §f[shift]§r§7 for more",
 
 "": "================== Items and Components =======================",
 "item.ninhosawm.raw_steel": "Raw Steel",
@@ -29,5 +30,12 @@
 "": "================ Mineable Factory Machinery ===================",
 "block.ninhosawm.crafter_block": "Blueprint Table",
 "block.ninhosawm.cobblestone_generator": "Cobblestone Generator T.I",
-  "tooltip.ninhosawm.cobblestone_generator": "§o\"Starting from the basics\"§r\n §7Simple Cobblestone Generator that get a few stones per Hour"
+  "tooltip.ninhosawm.cobblestone_generator": "§o\"Starting from the basics\"§r\n §7Simple Cobblestone Generator that get a few stones per Hour",
+
+"": "================ Mineable Factory Machinery ===================",
+"item.ninhosawm.nebula_spawn_egg": "§eNebula Spawner X3",
+  "tooltip.ninhosawm.nebula_spawn_egg": "§7\"Isn't she too cute?\"\n§r- Ninho",
+  "tooltip.ninhosawm.nebula_spawn_egg_shift": "§7It IS the dev's cat. Isn't it obvious?",
+"item.ninhosawm.dodo_spawn_egg": "Dodo Spawn Egg",
+  "tooltip.ninhosawm.dodo_spawn_egg": "Credits: §7Creature of the §oMod Tutorial \nMinecraft Neoforge 26.x§r§7 made by §b§nKaupenjoe"
 }

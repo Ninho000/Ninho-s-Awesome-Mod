@@ -7,4 +7,6 @@ import net.ninho.ninhosawm.NinhosAwesomeMod;
 public class ModModelLayerLocations {
     public static final ModelLayerLocation DODO =
             new ModelLayerLocation(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "dodo"), "main");
+    public static final ModelLayerLocation NEBULA =
+            new ModelLayerLocation(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "nebula"), "main");
 }

@@ -6,11 +6,13 @@ import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.ninho.ninhosawm.NinhosAwesomeMod;
 import net.ninho.ninhosawm.entity.ModEntities;
 import net.ninho.ninhosawm.entity.dodo.DodoEntity;
+import net.ninho.ninhosawm.entity.nebula.NebulaEntity;
 
 @EventBusSubscriber(modid = NinhosAwesomeMod.MOD_ID)
 public class ModEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.DODO.get(), DodoEntity.createAttributes().build());
+        event.put(ModEntities.NEBULA.get(), NebulaEntity.createAttributes().build());
     }
 }

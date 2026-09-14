@@ -18,10 +18,13 @@ public class ModEntities {
 
     public static final ResourceKey<EntityType<?>> DODO_KEY = ResourceKey.create(Registries.ENTITY_TYPE,
             Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "dodo"));
-
-
     public static final Supplier<EntityType<DodoEntity>> DODO = ENTITY_TYPES.register("dodo",
             () -> EntityType.Builder.of(DodoEntity::new, MobCategory.CREATURE).sized(1f, 2.5f).build(DODO_KEY));
+
+    public static final ResourceKey<EntityType<?>> NEBULA_KEY = ResourceKey.create(Registries.ENTITY_TYPE,
+            Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "nebula"));
+    public static final Supplier<EntityType<DodoEntity>> NEBULA = ENTITY_TYPES.register("nebula",
+            () -> EntityType.Builder.of(DodoEntity::new, MobCategory.CREATURE).sized(1f, 2.5f).build(NEBULA_KEY));
 
 
     public static void register(IEventBus eventBus) {
