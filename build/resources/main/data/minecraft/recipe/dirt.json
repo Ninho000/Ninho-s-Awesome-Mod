@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "building_blocks",
+  "key": {
+    "A": "minecraft:mud",
+    "B": "minecraft:gravel",
+    "C": "minecraft:charcoal"
+  },
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "result": {
+    "count": 5,
+    "id": "minecraft:dirt"
+  }
+}

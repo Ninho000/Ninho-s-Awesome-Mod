@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "building_blocks",
+  "key": {
+    "A": "minecraft:bone_meal",
+    "B": "minecraft:coal_block"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "id": "minecraft:calcite"
+  }
+}

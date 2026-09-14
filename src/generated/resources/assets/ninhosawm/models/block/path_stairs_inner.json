@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ninhosawm:block/full_path_block",
+    "side": "ninhosawm:block/full_path_block",
+    "top": "ninhosawm:block/full_path_block"
+  }
+}

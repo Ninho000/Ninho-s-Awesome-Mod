@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "building_blocks",
+  "key": {
+    "#": "minecraft:calcite"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ninhosawm:calcite_wall"
+  }
+}

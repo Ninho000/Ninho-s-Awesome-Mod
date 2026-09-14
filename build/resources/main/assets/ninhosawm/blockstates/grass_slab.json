@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ninhosawm:block/grass_slab"
+    },
+    "type=double": {
+      "model": "ninhosawm:block/full_grass_block"
+    },
+    "type=top": {
+      "model": "ninhosawm:block/grass_slab_top"
+    }
+  }
+}

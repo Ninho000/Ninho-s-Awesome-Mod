@@ -27,11 +27,46 @@ public class ModBlocks {
 
 //==============================================================================================================================
 
-        public static final DeferredBlock<Block> CRAFTER_BLOCK = registerBlock("crafter_block",
+    public static final DeferredBlock<Block> CRAFTER_BLOCK = registerBlock("crafter_block",
             properties -> new CrafterBlock(properties.strength(1.5F).requiresCorrectToolForDrops().noOcclusion()));
     public static final DeferredBlock<Block> COBBLESTONE_GENERATOR = registerBlock("cobblestone_generator",
             properties -> new CobblestoneGenerator(properties.strength(2F).requiresCorrectToolForDrops()
                     .noOcclusion().lightLevel(state -> 20)));
+
+//==================================================== Minecraft Like ==========================================================
+    //grass-dirt
+    public static final DeferredBlock<Block> FULL_GRASS_BLOCK = registerBlock("full_grass_block",
+        properties -> new Block(properties));
+    public static final DeferredBlock<Block> GRASS_STAIRS = registerBlock("grass_stairs",
+        properties -> new StairBlock(Blocks.GRASS_BLOCK.defaultBlockState(),
+                properties.sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> GRASS_SLAB = registerBlock("grass_slab",
+            properties -> new SlabBlock(properties.sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> DIRT_STAIRS = registerBlock("dirt_stairs",
+            properties -> new StairBlock(Blocks.DIRT.defaultBlockState(),
+                    properties.sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> DIRT_SLAB = registerBlock("dirt_slab",
+            properties -> new SlabBlock(properties.sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> COARSE_STAIRS = registerBlock("coarse_stairs",
+            properties -> new StairBlock(Blocks.COARSE_DIRT.defaultBlockState(),
+                    properties.sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> COARSE_SLAB = registerBlock("coarse_slab",
+            properties -> new SlabBlock(properties.sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> FULL_PATH_BLOCK = registerBlock("full_path_block",
+            properties -> new Block(properties));
+    public static final DeferredBlock<Block> PATH_STAIRS = registerBlock("path_stairs",
+            properties -> new StairBlock(Blocks.DIRT_PATH.defaultBlockState(),
+                    properties.sound(SoundType.GRASS)));
+    public static final DeferredBlock<Block> PATH_SLAB = registerBlock("path_slab",
+            properties -> new SlabBlock(properties.sound(SoundType.GRASS)));
+    //Minerals
+    public static final DeferredBlock<Block> CALCITE_STAIRS = registerBlock("calcite_stairs",
+            properties -> new StairBlock(Blocks.CALCITE.defaultBlockState(),
+                    properties.sound(SoundType.CALCITE)));
+    public static final DeferredBlock<Block> CALCITE_SLAB = registerBlock("calcite_slab",
+            properties -> new SlabBlock(properties.sound(SoundType.CALCITE)));
+    public static final DeferredBlock<Block> CALCITE_WALL = registerBlock("calcite_wall",
+            properties -> new WallBlock(properties.sound(SoundType.CALCITE)));
 
 //==============================================================================================================================
 

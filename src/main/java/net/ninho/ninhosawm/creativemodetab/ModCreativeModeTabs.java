@@ -47,6 +47,28 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final Supplier<CreativeModeTab> MINE_LIKE = CREATIVE_MODE_TABS.register("mine_like",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.GRASS_STAIRS.get()))
+                    .title(Component.translatable("creativetab.ninhosawm.mine_like"))
+                    .withTabsBefore(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "contraptions"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        //Soil
+                        output.accept(ModBlocks.GRASS_SLAB);
+                        output.accept(ModBlocks.DIRT_SLAB);
+                        output.accept(ModBlocks.COARSE_SLAB);
+                        output.accept(ModBlocks.PATH_SLAB);
+                        output.accept(ModBlocks.GRASS_STAIRS);
+                        output.accept(ModBlocks.DIRT_STAIRS);
+                        output.accept(ModBlocks.COARSE_STAIRS);
+                        output.accept(ModBlocks.PATH_STAIRS);
+                        //Minerals
+                        output.accept(ModBlocks.CALCITE_SLAB);
+                        output.accept(ModBlocks.CALCITE_STAIRS);
+                        output.accept(ModBlocks.CALCITE_WALL);
+
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

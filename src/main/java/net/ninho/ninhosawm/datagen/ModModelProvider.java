@@ -1,5 +1,7 @@
 package net.ninho.ninhosawm.datagen;
 
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.ninho.ninhosawm.NinhosAwesomeMod;
 import net.ninho.ninhosawm.block.ModBlocks;
 import net.ninho.ninhosawm.item.ModItems;
@@ -35,5 +37,19 @@ public class ModModelProvider extends ModelProvider {
 
 //======================================== CONTRAPTIONS =============================================
         blockModels.createNonTemplateModelBlock(ModBlocks.COBBLESTONE_GENERATOR.get());
+
+//======================================= Minecraft Like ============================================
+        blockModels.family(ModBlocks.FULL_GRASS_BLOCK.get())
+                .stairs(ModBlocks.GRASS_STAIRS.get()).slab(ModBlocks.GRASS_SLAB.get());
+        blockModels.family(Blocks.DIRT)
+                .stairs(ModBlocks.DIRT_STAIRS.get()).slab(ModBlocks.DIRT_SLAB.get());
+        blockModels.family(Blocks.COARSE_DIRT)
+                .stairs(ModBlocks.COARSE_STAIRS.get()).slab(ModBlocks.COARSE_SLAB.get());
+        blockModels.family(ModBlocks.FULL_PATH_BLOCK.get())
+                .stairs(ModBlocks.PATH_STAIRS.get()).slab(ModBlocks.PATH_SLAB.get());
+        blockModels.family(Blocks.CALCITE)
+                .stairs(ModBlocks.CALCITE_STAIRS.get())
+                .slab(ModBlocks.CALCITE_SLAB.get())
+                .wall(ModBlocks.CALCITE_WALL.get());
     }
 }

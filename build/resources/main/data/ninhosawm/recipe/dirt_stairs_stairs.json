@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "building_blocks",
+  "key": {
+    "#": "minecraft:dirt"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ninhosawm:dirt_stairs"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ninhosawm:block/full_grass_block",
+    "side": "ninhosawm:block/full_grass_block",
+    "top": "ninhosawm:block/full_grass_block"
+  }
+}
