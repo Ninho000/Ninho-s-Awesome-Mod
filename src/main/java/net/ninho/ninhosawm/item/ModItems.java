@@ -1,6 +1,7 @@
 package net.ninho.ninhosawm.item;
 
 import net.ninho.ninhosawm.NinhosAwesomeMod;
+import net.ninho.ninhosawm.entity.ModEntities;
 import net.ninho.ninhosawm.function.ToolTip;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -46,6 +47,8 @@ public class ModItems {
 //                                         Mineable Factory Machinery
 //=============================================================================================================
 
+    public static final DeferredItem<Item> DODO_SPAWN_EGG = ITEMS.registerItem("dodo_spawn_egg",
+            properties -> new SpawnEggItem(properties.spawnEgg(ModEntities.DODO.get())));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

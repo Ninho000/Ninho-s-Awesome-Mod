@@ -3,6 +3,7 @@ package net.ninho.ninhosawm;
 import net.ninho.ninhosawm.block.ModBlocks;
 import net.ninho.ninhosawm.blockentity.ModBlockEntities;
 import net.ninho.ninhosawm.creativemodetab.ModCreativeModeTabs;
+import net.ninho.ninhosawm.entity.ModEntities;
 import net.ninho.ninhosawm.item.ModItems;
 import net.ninho.ninhosawm.menu.ModMenuScreens;
 import net.ninho.ninhosawm.menu.ModMenuTypes;
@@ -30,12 +31,17 @@ public class NinhosAwesomeMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        //Items
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        //Blocks
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        //HUDs
         ModMenuTypes.register(modEventBus);
         ModMenuScreens.register(modEventBus);
+        //Entities
+        ModEntities.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         // Register the item to a creative tab

@@ -1,4 +1,4 @@
-// 26.2	2026-09-13T23:53:31.7746076	Model Definitions - ninhosawm
+// 26.2	2026-09-14T11:35:40.1387256	Model Definitions - ninhosawm
 ae4f7ccb2e5e20175316cd027166d0f0caaa780b assets/minecraft/blockstates/calcite.json
 06b0013a6852253b1055065dd99c5b7a6c363c91 assets/minecraft/blockstates/coarse_dirt.json
 231e5d499785932a985ae132a7e6f2e2626b74a5 assets/minecraft/blockstates/dirt.json
@@ -32,6 +32,7 @@ a89b92b15d74411fd3982fa7ceaec23d6d860169 assets/ninhosawm/items/coarse_stairs.js
 f3e0f40f08319aa882f82359685abf56a602d608 assets/ninhosawm/items/crafter_block.json
 c096c6a7a16d8cafebb7a2ae30dc108aa226f50e assets/ninhosawm/items/dirt_slab.json
 5ce72014bd382ffe71e015ba81ef046a65aa3dec assets/ninhosawm/items/dirt_stairs.json
+e69c50fcfd75d6a41be41042de396229191d9937 assets/ninhosawm/items/dodo_spawn_egg.json
 c6c4f3ec36815f75b69b6889561af6bb456d5153 assets/ninhosawm/items/fluid_container.json
 96672f88400e9c71a1f293d25549f960c0a5577c assets/ninhosawm/items/full_grass_block.json
 0e7e3699e382cc49265f0c4b6b40c77a4b15df4b assets/ninhosawm/items/full_path_block.json
@@ -80,6 +81,7 @@ e4d80639aae2ff791f1f743b0c23ea90eacab159 assets/ninhosawm/models/block/path_stai
 59077acaf9c740c64121f1a35588b97f8f80e67c assets/ninhosawm/models/item/basic_gears.json
 e3dac85d69bb089153667890747ff3007a1f06f3 assets/ninhosawm/models/item/basic_storage.json
 baf9beab60fbc16528f5eedeb29e9eb9efcc57da assets/ninhosawm/models/item/boiler.json
+414b64f4c49e15c14437cd86af45b89c727f8b29 assets/ninhosawm/models/item/dodo_spawn_egg.json
 6dee786913c87fdbc8ba9522a119873bb755df03 assets/ninhosawm/models/item/fluid_container.json
 b71d0b05091249232c2e7dcb989c2dae18606641 assets/ninhosawm/models/item/iron_drill.json
 e3dc323a7bf6a1a1e8e5f1519aac5d947bd7d703 assets/ninhosawm/models/item/raw_steel.json

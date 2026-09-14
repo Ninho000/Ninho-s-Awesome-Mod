@@ -33,6 +33,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STEEL_SHOVEL);
                         output.accept(ModItems.STEEL_HOE);
 
+                        output.accept(ModItems.DODO_SPAWN_EGG);
+
                     }).build());
 
     public static final Supplier<CreativeModeTab> CONTRAPTIONS = CREATIVE_MODE_TABS.register("contraptions",
