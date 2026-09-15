@@ -1,5 +1,6 @@
 package net.ninho.ninhosawm.creativemodetab;
 
+import net.minecraft.world.item.Items;
 import net.ninho.ninhosawm.NinhosAwesomeMod;
 import net.ninho.ninhosawm.block.ModBlocks;
 import net.ninho.ninhosawm.item.ModItems;
@@ -18,9 +19,9 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, NinhosAwesomeMod.MOD_ID);
 
-    public static final Supplier<CreativeModeTab> MOD_PARTS = CREATIVE_MODE_TABS.register("mod_parts",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STEEL_INGOT.get()))
-                    .title(Component.translatable("creativetab.ninhosawm.mod_parts"))
+    public static final Supplier<CreativeModeTab> TOOL_WEAPONS = CREATIVE_MODE_TABS.register("tool_weapons",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.STEEL_AXE.get()))
+                    .title(Component.translatable("creativetab.ninhosawm.tool_weapons"))
                     .withTabsBefore(CreativeModeTabs.INGREDIENTS)
                     .displayItems((itemDisplayParameters, output) -> {
 
@@ -33,26 +34,40 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.STEEL_SHOVEL);
                         output.accept(ModItems.STEEL_HOE);
 
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> MOUNTS = CREATIVE_MODE_TABS.register("mounts",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.WOLF_SPAWN_EGG))
+                    .title(Component.translatable("creativetab.ninhosawm.mounts"))
+                    .withTabsBefore(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "tool_weapons"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
                         output.accept(ModItems.DODO_SPAWN_EGG);
+                        output.accept(ModItems.NEBULA_SPAWN_EGG);
 
                     }).build());
 
-    public static final Supplier<CreativeModeTab> CONTRAPTIONS = CREATIVE_MODE_TABS.register("contraptions",
+    public static final Supplier<CreativeModeTab> MAGNIFICENT_MACHINES = CREATIVE_MODE_TABS.register("magnificent_machines",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.CRAFTER_BLOCK.get()))
-                    .title(Component.translatable("creativetab.ninhosawm.contraptions"))
-                    .withTabsBefore(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "mod_parts"))
+                    .title(Component.translatable("creativetab.ninhosawm.magnificent_machines"))
+                    .withTabsBefore(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "mounts"))
                     .displayItems((itemDisplayParameters, output) -> {
 
-                        //============= CRAFTERS ===============
-                        output.accept(ModBlocks.CRAFTER_BLOCK);
+                        //============= ENGINES ===============
+                        output.accept(ModBlocks.COPPER_WATER_RESERVOIR);
+                        output.accept(ModBlocks.STONE_BOILER);
+
+                        //============= TOOLS ===============
+
+                        //============= MACHINES ===============
                         output.accept(ModBlocks.COBBLESTONE_GENERATOR);
 
                     }).build());
 
-    public static final Supplier<CreativeModeTab> MINE_LIKE = CREATIVE_MODE_TABS.register("mine_like",
+    public static final Supplier<CreativeModeTab> BETTER_THAN_MINECRAFT = CREATIVE_MODE_TABS.register("better_than_minecraft",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.GRASS_STAIRS.get()))
-                    .title(Component.translatable("creativetab.ninhosawm.mine_like"))
-                    .withTabsBefore(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "contraptions"))
+                    .title(Component.translatable("creativetab.ninhosawm.better_than_minecraft"))
+                    .withTabsBefore(Identifier.fromNamespaceAndPath(NinhosAwesomeMod.MOD_ID, "magnificent_machines"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         //Soil

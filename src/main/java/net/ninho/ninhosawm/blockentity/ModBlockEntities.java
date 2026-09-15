@@ -8,6 +8,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.ninho.ninhosawm.blockentity.custom.engine.StoneBoilerEntity;
 
 import java.util.function.Supplier;
 
@@ -18,6 +19,11 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<CrafterBlockEntity>> CRAFTER_BLOCK_BE =
             BLOCK_ENTITIES.register("crafter_block_be", () -> new BlockEntityType<>(
                     CrafterBlockEntity::new, ModBlocks.CRAFTER_BLOCK.get()));
+
+    public static final Supplier<BlockEntityType<StoneBoilerEntity>> STONE_BOILER =
+            BLOCK_ENTITIES.register("stone_boiler_be", () -> new BlockEntityType<>(
+                    StoneBoilerEntity::new, ModBlocks.STONE_BOILER.get()));
+
     public static final Supplier<BlockEntityType<CobblestoneGeneratorEntity>> COBBLESTONE_GENERATOR_BE =
             BLOCK_ENTITIES.register("cobblestone_generator_be", () -> new BlockEntityType<>(
                     CobblestoneGeneratorEntity::new, ModBlocks.COBBLESTONE_GENERATOR.get()));

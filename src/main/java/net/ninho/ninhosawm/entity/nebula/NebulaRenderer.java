@@ -8,7 +8,7 @@ import net.ninho.ninhosawm.entity.ModModelLayerLocations;
 
 public class NebulaRenderer extends MobRenderer<NebulaEntity, NebulaRenderState, NebulaModel> {
     public NebulaRenderer(EntityRendererProvider.Context context) {
-        super(context, new NebulaModel(context.bakeLayer(ModModelLayerLocations.NEBULA)), 0.65f);
+        super(context, new NebulaModel(context.bakeLayer(ModModelLayerLocations.NEBULA)), 0.25f);
     }
 
     @Override
