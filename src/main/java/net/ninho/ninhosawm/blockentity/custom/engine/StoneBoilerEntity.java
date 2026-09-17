@@ -83,11 +83,6 @@ public class StoneBoilerEntity extends BlockEntity  {
 
     //Global stats return functions
     public boolean isActive() { return energy > 0;}
-    /*public int getEnergy() { return energy; }
+    public int getEnergy() { return energy; }
     public int getMaxEnergy() { return MAX_ENERGY; }
-    public ItemStack getFuel() { return inventory.getStackInSlot(0); }
-    public void setFuel(ItemStack stack) {      //Manual Fuel-Items giver
-        inventory.getStackInSlot(0) = stack;
-        setChanged();
-    }*/
 }

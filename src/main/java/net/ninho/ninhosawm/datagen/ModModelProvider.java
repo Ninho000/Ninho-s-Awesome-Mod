@@ -45,20 +45,15 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createNonTemplateModelBlock(ModBlocks.CRAFTER_BLOCK.get());
 
 //======================================== CONTRAPTIONS =============================================
-        blockModels.createTrivialBlock(
+        /*blockModels.createTrivialBlock(
                 ModBlocks.COPPER_WATER_RESERVOIR.get(),
-                TexturedModel.createDefault(
-                        block -> new TextureMapping()
-                                .put(TextureSlot.SIDE,
-                                        modTexture("block/copper_water_reservoir_side"))
-                                .put(TextureSlot.TOP,
-                                        modTexture("block/copper_water_reservoir_axis"))
-                                .put(TextureSlot.BOTTOM,
-                                        modTexture("block/copper_water_reservoir_axis")),
-                        ModelTemplates.CUBE_BOTTOM_TOP
-                )
-        );
-        blockModels.createNonTemplateModelBlock(ModBlocks.STONE_BOILER.get());
+                TexturedModel.createDefault(block -> new TextureMapping()
+                                .put(TextureSlot.SIDE,modTexture("block/copper_water_reservoir_side"))
+                                .put(TextureSlot.TOP, modTexture("block/copper_water_reservoir_axis"))
+                                .put(TextureSlot.BOTTOM, modTexture("block/copper_water_reservoir_axis")),
+                        ModelTemplates.CUBE_BOTTOM_TOP));*/
+
+        blockModels.createNonTemplateModelBlock(ModBlocks.COPPER_WATER_RESERVOIR.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.COBBLESTONE_GENERATOR.get());
 
 //======================================= Minecraft Like ============================================

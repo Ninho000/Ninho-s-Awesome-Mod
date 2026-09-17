@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ninhosawm:block/copper_water_reservoir_axis",
+    "side": "ninhosawm:block/copper_water_reservoir_side"
+  }
+}
