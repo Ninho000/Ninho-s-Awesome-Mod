@@ -5,12 +5,13 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.neoforge.items.ItemStackHandler;
 import net.ninho.ninhosawm.block.ModBlocks;
 import net.ninho.ninhosawm.blockentity.ModBlockEntities;
 
 import java.util.Map;
 
-public class StoneBoilerEntity extends BlockEntity {
+public class StoneBoilerEntity extends BlockEntity  {
 
     private static final int MAX_ENERGY = 1000;
     private static final int TICKS_PER_ENERGY = 20;
@@ -25,7 +26,12 @@ public class StoneBoilerEntity extends BlockEntity {
     private int fuelTicks = 0;
 
     // Fuel Slot
-    private ItemStack fuel = ItemStack.EMPTY;
+    private final ItemStackHandler inventory = new ItemStackHandler(1) {
+        @Override
+        protected void onContentsChanged(int slot) {
+            StoneBoilerEntity.this.setChanged();
+        }
+    };
 
     public StoneBoilerEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.STONE_BOILER.get(), pos, state);
@@ -41,14 +47,14 @@ public class StoneBoilerEntity extends BlockEntity {
         int water = engine.waterCount();                 //Water reservoirs count
         if (water <= 0) return;                          //No Water Source
         if (engine.energy >= MAX_ENERGY) return;         //Energy Full
-        if (engine.fuelTicks <= 0 &&  engine.fuel.isEmpty() ) return; //Get out of Fuel
+        if (engine.fuelTicks <= 0 &&  engine.inventory.getStackInSlot(0).isEmpty() ) return; //Get out of Fuel
 
         if (engine.fuelTicks > 0) engine.fuelTicks--;    //Burns Item
         else {
-            int duration = engine.getFuelDuration(engine.fuel); //Gets Fuel and Duration
+            int duration = engine.getFuelDuration(engine.inventory.getStackInSlot(0)); //Gets Fuel and Duration
             if (duration > 0) {                          //If it is a valid duration
                 engine.fuelTicks = duration;             //Burn duration input
-                engine.fuel.shrink(1);          //Remove the ITEM from SLOT
+                engine.inventory.getStackInSlot(0).shrink(1);          //Remove the ITEM from SLOT
             }
         }
         engine.tickCounter++;
@@ -76,11 +82,12 @@ public class StoneBoilerEntity extends BlockEntity {
     }
 
     //Global stats return functions
-    public int getEnergy() { return energy; }
+    public boolean isActive() { return energy > 0;}
+    /*public int getEnergy() { return energy; }
     public int getMaxEnergy() { return MAX_ENERGY; }
-    public ItemStack getFuel() { return fuel; }
-    public boolean isActive() { return waterCount() > 0 && !fuel.isEmpty(); }
+    public ItemStack getFuel() { return inventory.getStackInSlot(0); }
     public void setFuel(ItemStack stack) {      //Manual Fuel-Items giver
-        fuel = stack; setChanged();
-    }
+        inventory.getStackInSlot(0) = stack;
+        setChanged();
+    }*/
 }

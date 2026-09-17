@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "ninhosawm:block/stone_boiler_front_active",
+    "side": "ninhosawm:block/stone_boiler_side",
+    "top": "ninhosawm:block/stone_boiler_top",
+    "bottom": "ninhosawm:block/stone_boiler_bottom"
+  }
+}

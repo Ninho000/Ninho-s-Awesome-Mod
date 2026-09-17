@@ -1,5 +1,10 @@
 package net.ninho.ninhosawm.datagen;
 
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.client.data.models.model.TexturedModel;
+import net.minecraft.client.resources.model.sprite.Material;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.ninho.ninhosawm.NinhosAwesomeMod;
@@ -40,6 +45,20 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createNonTemplateModelBlock(ModBlocks.CRAFTER_BLOCK.get());
 
 //======================================== CONTRAPTIONS =============================================
+        blockModels.createTrivialBlock(
+                ModBlocks.COPPER_WATER_RESERVOIR.get(),
+                TexturedModel.createDefault(
+                        block -> new TextureMapping()
+                                .put(TextureSlot.SIDE,
+                                        modTexture("block/copper_water_reservoir_side"))
+                                .put(TextureSlot.TOP,
+                                        modTexture("block/copper_water_reservoir_axis"))
+                                .put(TextureSlot.BOTTOM,
+                                        modTexture("block/copper_water_reservoir_axis")),
+                        ModelTemplates.CUBE_BOTTOM_TOP
+                )
+        );
+        blockModels.createNonTemplateModelBlock(ModBlocks.STONE_BOILER.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.COBBLESTONE_GENERATOR.get());
 
 //======================================= Minecraft Like ============================================
@@ -55,5 +74,13 @@ public class ModModelProvider extends ModelProvider {
                 .stairs(ModBlocks.CALCITE_STAIRS.get())
                 .slab(ModBlocks.CALCITE_SLAB.get())
                 .wall(ModBlocks.CALCITE_WALL.get());
+    }
+    private static Material modTexture(String path) {
+        return new Material(
+                Identifier.fromNamespaceAndPath(
+                        NinhosAwesomeMod.MOD_ID,
+                        path
+                )
+        );
     }
 }
