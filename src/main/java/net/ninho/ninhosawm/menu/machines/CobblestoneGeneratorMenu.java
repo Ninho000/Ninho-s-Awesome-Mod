@@ -3,15 +3,14 @@ package net.ninho.ninhosawm.menu.machines;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import net.ninho.ninhosawm.blockentity.custom.CobblestoneGeneratorEntity;
+import net.ninho.ninhosawm.blockentity.custom.StoneBoilerEntity;
 import net.ninho.ninhosawm.function.customModMenu;
 import net.ninho.ninhosawm.menu.ModMenuTypes;
 
-public class CobblestoneGeneratorMenu extends AbstractContainerMenu {
-    private final CobblestoneGeneratorEntity blockEntity;
+public class CobblestoneGeneratorMenu extends customModMenu {
+    private final StoneBoilerEntity blockEntity;
 
     //First builder direction the acess to the blockEnt in "this position"
     public CobblestoneGeneratorMenu(
@@ -20,7 +19,7 @@ public class CobblestoneGeneratorMenu extends AbstractContainerMenu {
             RegistryFriendlyByteBuf buffer) {
 
         this(containerId,playerInventory,
-                (CobblestoneGeneratorEntity) playerInventory.player.
+                (StoneBoilerEntity) playerInventory.player.
                         level().getBlockEntity(buffer.readBlockPos())
         );
     }
@@ -28,14 +27,14 @@ public class CobblestoneGeneratorMenu extends AbstractContainerMenu {
     public CobblestoneGeneratorMenu(
             int containerId,
             Inventory playerInventory,
-            CobblestoneGeneratorEntity blockEntity) {
+            StoneBoilerEntity blockEntity) {
         super(ModMenuTypes.COBBLESTONE_GENERATOR_MENU.get(), containerId);
         this.blockEntity = blockEntity;
 
         for (int i = 0; i < 5; i++) {           //adds five slots on y:35
-            addSlot(new Slot(blockEntity, i, 44 + i * 18, 35));
+            addSlot(new Slot(blockEntity, i, 44 + i * 18, 50));
         }
-        customModMenu.addPlayerInventory(this, playerInventory);
+        addPlayerInventory(playerInventory);
     }
 
     //Máx Distance to continue to use it

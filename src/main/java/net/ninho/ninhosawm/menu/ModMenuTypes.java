@@ -7,6 +7,7 @@ import net.ninho.ninhosawm.NinhosAwesomeMod;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
+import net.ninho.ninhosawm.menu.engines.StoneBoilerMenu;
 import net.ninho.ninhosawm.menu.machines.CobblestoneGeneratorMenu;
 
 public class ModMenuTypes {
@@ -16,7 +17,7 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<StoneBoilerMenu>> STONE_BOILER_MENU =
             MENUS.register("stone_boiler_menu",
-                    () -> IMenuTypeExtension.create(CobblestoneGeneratorMenu::new));
+                    () -> IMenuTypeExtension.create(StoneBoilerMenu::new));
     public static final DeferredHolder<MenuType<?>, MenuType<CobblestoneGeneratorMenu>> COBBLESTONE_GENERATOR_MENU =
             MENUS.register("cobblestone_generator_menu",
                     () -> IMenuTypeExtension.create(CobblestoneGeneratorMenu::new));

@@ -17,5 +17,29 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/coal_block": {
+    "criteria": {
+      "has_the_recipe": "2026-09-17 13:12:41 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2026-09-17 13:12:41 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2026-09-17 13:12:41 -0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-09-17 18:49:03 -0300"
+    },
+    "done": true
+  },
   "DataVersion": 4903
 }

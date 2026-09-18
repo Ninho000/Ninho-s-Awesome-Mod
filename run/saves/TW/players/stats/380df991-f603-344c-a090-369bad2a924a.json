@@ -1,27 +1,35 @@
 {
   "stats": {
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 23342,
-      "minecraft:walk_one_cm": 11764,
-      "minecraft:total_world_time": 34524,
-      "minecraft:leave_game": 15,
-      "minecraft:fly_one_cm": 11703,
-      "minecraft:crouch_one_cm": 628,
-      "minecraft:sneak_time": 278,
-      "minecraft:play_time": 23342,
-      "minecraft:damage_dealt": 138,
-      "minecraft:jump": 18,
-      "minecraft:time_since_death": 23342
-    },
     "minecraft:used": {
       "minecraft:pale_oak_fence": 22,
+      "minecraft:hopper": 1,
       "minecraft:white_concrete": 36,
+      "ninhosawm:copper_water_reservoir": 7,
       "minecraft:drowned_spawn_egg": 4,
-      "ninhosawm:nebula_spawn_egg": 9
+      "ninhosawm:nebula_spawn_egg": 9,
+      "minecraft:barrel": 1,
+      "ninhosawm:stone_boiler": 8,
+      "ninhosawm:cobblestone_generator": 4
     },
     "minecraft:picked_up": {
+      "minecraft:coal": 1101,
       "minecraft:nautilus_shell": 1,
       "minecraft:rotten_flesh": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 52998,
+      "minecraft:walk_one_cm": 20362,
+      "minecraft:leave_game": 21,
+      "minecraft:damage_dealt": 138,
+      "minecraft:play_time": 52998,
+      "minecraft:jump": 31,
+      "minecraft:time_since_death": 52998,
+      "minecraft:open_barrel": 3,
+      "minecraft:inspect_hopper": 6,
+      "minecraft:total_world_time": 64267,
+      "minecraft:fly_one_cm": 19086,
+      "minecraft:crouch_one_cm": 655,
+      "minecraft:sneak_time": 316
     }
   },
   "DataVersion": 4903

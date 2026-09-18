@@ -38,6 +38,7 @@
 
   "":"Machines",
   "block.ninhosawm.cobblestone_generator": "Cobblestone Generator T.I",
+  "container.ninhosawm.cobblestone_generator": "Production: 4.0/min",
   "tooltip.ninhosawm.cobblestone_generator": "§o\"Starting from the basics\"§r\n §7Simple Cobblestone Generator that get a few stones per Hour",
 
   "":"Crafter",

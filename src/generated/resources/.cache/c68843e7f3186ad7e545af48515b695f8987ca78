@@ -1,4 +1,4 @@
-// 26.2	2026-09-17T12:52:21.8663369	Model Definitions - ninhosawm
+// 26.2	2026-09-17T18:46:49.4912867	Model Definitions - ninhosawm
 ae4f7ccb2e5e20175316cd027166d0f0caaa780b assets/minecraft/blockstates/calcite.json
 06b0013a6852253b1055065dd99c5b7a6c363c91 assets/minecraft/blockstates/coarse_dirt.json
 231e5d499785932a985ae132a7e6f2e2626b74a5 assets/minecraft/blockstates/dirt.json
@@ -66,7 +66,6 @@ a85f076ec716e06c9dba328f508dbf2fde46ae6d assets/ninhosawm/models/block/calcite_w
 93957bcfcdf2d0cc5da6fe6ee6a15dcad81b9477 assets/ninhosawm/models/block/coarse_stairs.json
 40ce1d098a3a7ee270b31948912804beeebef7e8 assets/ninhosawm/models/block/coarse_stairs_inner.json
 5206bb35fb5405eb6f21c37f761965d27287dc48 assets/ninhosawm/models/block/coarse_stairs_outer.json
-749357f755420ff229476622179ca2b6894a0dd6 assets/ninhosawm/models/block/copper_water_reservoir.json
 611c57a61378fabfcbe00990eb06784882e631a4 assets/ninhosawm/models/block/dirt_slab.json
 d65c692b0e0823c0822946b00608951d0fc80826 assets/ninhosawm/models/block/dirt_slab_top.json
 7baa831eeae6b4e3e340195a646eec308468c8d4 assets/ninhosawm/models/block/dirt_stairs.json
