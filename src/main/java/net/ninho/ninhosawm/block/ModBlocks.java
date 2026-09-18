@@ -2,9 +2,9 @@ package net.ninho.ninhosawm.block;
 
 
 import net.ninho.ninhosawm.NinhosAwesomeMod;
-import net.ninho.ninhosawm.block.custom.*;
 import net.ninho.ninhosawm.block.custom.CrafterBlock;
 import net.ninho.ninhosawm.block.custom.engine.StoneBoiler;
+import net.ninho.ninhosawm.block.custom.machine.CobblestoneGenerator;
 import net.ninho.ninhosawm.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -29,16 +29,27 @@ public class ModBlocks {
 //==============================================================================================================================
 
     public static final DeferredBlock<Block> CRAFTER_BLOCK = registerBlock("crafter_block",
-            properties -> new CrafterBlock(properties.strength(1.5F).requiresCorrectToolForDrops().noOcclusion()));
+            properties -> new CrafterBlock(properties.strength(1.5F).noOcclusion()));
+    public static final DeferredBlock<Block> I_BEAM = registerBlock("i_beam",
+            properties -> new Block(properties));
 
+    //ENGINES
     public static final DeferredBlock<Block> COPPER_WATER_RESERVOIR = registerBlock("copper_water_reservoir",
-            properties -> new Block(properties.strength(2F).requiresCorrectToolForDrops()));
+            properties -> new Block(properties.strength(2F)));
     public static final DeferredBlock<Block> STONE_BOILER = registerBlock("stone_boiler",
-            properties -> new StoneBoiler(properties.strength(2F).requiresCorrectToolForDrops()));
+            properties -> new StoneBoiler(properties.strength(2F)));
 
+    //ENGINES
+    public static final DeferredBlock<Block> NETHERITE_MINER = registerBlock("netherite_miner",
+            properties -> new Block(properties));
+    public static final DeferredBlock<Block> DIAMOND_MINER = registerBlock("diamond_miner",
+            properties -> new Block(properties));
+    public static final DeferredBlock<Block> IRON_MINER = registerBlock("iron_miner",
+            properties -> new Block(properties));
+
+    //MACHINES
     public static final DeferredBlock<Block> COBBLESTONE_GENERATOR = registerBlock("cobblestone_generator",
-            properties -> new CobblestoneGenerator(properties.strength(2F).requiresCorrectToolForDrops()
-                    .noOcclusion().lightLevel(state -> 20)));
+            properties -> new CobblestoneGenerator(properties.strength(2F)));
 
 //==================================================== Minecraft Like ==========================================================
     //grass-dirt

@@ -58,9 +58,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STONE_BOILER);
 
                         //============= TOOLS ===============
+                        output.accept(ModBlocks.IRON_MINER);
+                        output.accept(ModBlocks.DIAMOND_MINER);
+                        output.accept(ModBlocks.NETHERITE_MINER);
 
                         //============= MACHINES ===============
                         output.accept(ModBlocks.COBBLESTONE_GENERATOR);
+
+                        //============ INGREDIENTS =============
+                        output.accept(ModBlocks.I_BEAM);
 
                     }).build());
 

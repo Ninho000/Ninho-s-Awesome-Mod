@@ -10,7 +10,7 @@ import net.ninho.ninhosawm.function.customModMenu;
 import net.ninho.ninhosawm.menu.ModMenuTypes;
 
 public class StoneBoilerMenu extends customModMenu {
-    private final net.ninho.ninhosawm.blockentity.custom.engine.StoneBoilerEntity blockEntity;
+    private final StoneBoilerEntity blockEntity;
 
     //First builder direction the access to the blockEnt in "this position"
     public StoneBoilerMenu(
@@ -31,7 +31,7 @@ public class StoneBoilerMenu extends customModMenu {
         super(ModMenuTypes.STONE_BOILER_MENU.get(), containerId);
         this.blockEntity = blockEntity;
 
-        addSlot(new Slot(StoneBoilerEntity, 0, 80, 50)); //adds fuel Slot
+        addSlot(new Slot(blockEntity, 0, 80, 50)); //adds fuel Slot
     }
 
     //Máx Distance to continue to use it

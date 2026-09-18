@@ -48,6 +48,8 @@ public class ModModelProvider extends ModelProvider {
         blockModels.createNonTemplateModelBlock(ModBlocks.COPPER_WATER_RESERVOIR.get());
         blockModels.createNonTemplateModelBlock(ModBlocks.COBBLESTONE_GENERATOR.get());
 
+        blockModels.createNonTemplateModelBlock(ModBlocks.I_BEAM.get());
+
 //======================================= Minecraft Like ============================================
         blockModels.family(ModBlocks.FULL_GRASS_BLOCK.get())
                 .stairs(ModBlocks.GRASS_STAIRS.get()).slab(ModBlocks.GRASS_SLAB.get());

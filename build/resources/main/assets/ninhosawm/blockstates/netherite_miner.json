@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ninhosawm:block/netherite_miner"
+    },
+    "facing=east": {
+      "model": "ninhosawm:block/netherite_miner",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ninhosawm:block/netherite_miner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ninhosawm:block/netherite_miner",
+      "y": 270
+    }
+  }
+}

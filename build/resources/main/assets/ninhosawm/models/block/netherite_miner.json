@@ -1,0 +1,6 @@
+{
+  "parent": "ninhosawm:block/iron_miner",
+  "textures": {
+    "1": "ninhosawm:block/diamond_miner"
+  }
+}
