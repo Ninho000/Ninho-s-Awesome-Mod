@@ -67,6 +67,7 @@ public class ModCreativeModeTabs {
 
                         //============ INGREDIENTS =============
                         output.accept(ModBlocks.I_BEAM);
+                        output.accept(ModItems.BASIC_GEARS);
 
                     }).build());
 

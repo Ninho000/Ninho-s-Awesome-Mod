@@ -1,25 +1,34 @@
 package net.ninho.ninhosawm.datagen;
 
-import net.minecraft.client.data.models.model.TextureMapping;
-import net.minecraft.client.data.models.model.TextureSlot;
-import net.minecraft.client.data.models.model.TexturedModel;
+import net.minecraft.client.data.models.blockstates.BlockModelDefinitionGenerator;
+import net.minecraft.client.data.models.blockstates.MultiVariantGenerator;
+import net.minecraft.client.data.models.blockstates.PropertyDispatch;
+import net.minecraft.client.data.models.model.*;
 import net.minecraft.client.resources.model.sprite.Material;
+import net.minecraft.core.Direction;
+import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.ninho.ninhosawm.NinhosAwesomeMod;
 import net.ninho.ninhosawm.block.ModBlocks;
 import net.ninho.ninhosawm.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
-import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.data.PackOutput;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Stream;
 
 public class ModModelProvider extends ModelProvider {
     public ModModelProvider(PackOutput output) {
         super(output, NinhosAwesomeMod.MOD_ID);
     }
+
+    private final Set<Block> manualBlocks = new HashSet<>();
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
@@ -31,9 +40,6 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.STEEL_INGOT.get(), ModelTemplates.FLAT_ITEM);
 
         itemModels.generateFlatItem(ModItems.BASIC_GEARS.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.FLUID_CONTAINER.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.BOILER.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ModItems.IRON_DRILL.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.BASIC_STORAGE.get(), ModelTemplates.FLAT_ITEM);
 //============================================ TOOLS ================================================
         itemModels.generateFlatItem(ModItems.STEEL_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -46,9 +52,15 @@ public class ModModelProvider extends ModelProvider {
 
 //======================================== CONTRAPTIONS =============================================
         blockModels.createNonTemplateModelBlock(ModBlocks.COPPER_WATER_RESERVOIR.get());
-        blockModels.createNonTemplateModelBlock(ModBlocks.COBBLESTONE_GENERATOR.get());
+        manualBlock(ModBlocks.STONE_BOILER.get());
+
+        generateFacingBlock(blockModels, ModBlocks.NETHERITE_MINER.get());
+        generateFacingBlock(blockModels, ModBlocks.DIAMOND_MINER.get());
+        generateFacingBlock(blockModels, ModBlocks.IRON_MINER.get());
 
         blockModels.createNonTemplateModelBlock(ModBlocks.I_BEAM.get());
+
+        generateFacingBlock(blockModels, ModBlocks.COBBLESTONE_GENERATOR.get());
 
 //======================================= Minecraft Like ============================================
         blockModels.family(ModBlocks.FULL_GRASS_BLOCK.get())
@@ -64,12 +76,28 @@ public class ModModelProvider extends ModelProvider {
                 .slab(ModBlocks.CALCITE_SLAB.get())
                 .wall(ModBlocks.CALCITE_WALL.get());
     }
-    private static Material modTexture(String path) {
-        return new Material(
-                Identifier.fromNamespaceAndPath(
-                        NinhosAwesomeMod.MOD_ID,
-                        path
+    //Manueal Generated BLock
+    private void manualBlock(Block block) {
+        manualBlocks.add(block);
+    }
+    //Simple Horizontal Block Function
+    private void generateFacingBlock(BlockModelGenerators blockModels, Block block) {
+        Identifier model = ModelLocationUtils.getModelLocation(block);
+
+        blockModels.blockStateOutput.accept(
+                MultiVariantGenerator.dispatch(block,BlockModelGenerators.plainVariant(model)
+                ).with(PropertyDispatch.modify(BlockStateProperties.HORIZONTAL_FACING)
+                                .select(Direction.NORTH, BlockModelGenerators.NOP)
+                                .select(Direction.EAST, BlockModelGenerators.Y_ROT_90)
+                                .select(Direction.SOUTH, BlockModelGenerators.Y_ROT_180)
+                                .select(Direction.WEST, BlockModelGenerators.Y_ROT_270)
                 )
         );
+    }
+    //New validation Method ta remove Manual Blocks from the list before execute
+    @Override
+    protected Stream<? extends Holder<Block>> getKnownBlocks() {
+        return super.getKnownBlocks()
+                .filter(holder -> !manualBlocks.contains(holder.value()));
     }
 }

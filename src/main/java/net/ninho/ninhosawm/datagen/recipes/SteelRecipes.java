@@ -1,5 +1,6 @@
 package net.ninho.ninhosawm.datagen.recipes;
 
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -10,8 +11,8 @@ import net.ninho.ninhosawm.tags.ModTags;
 
 public class SteelRecipes extends RecipeProvider {
 
-    public SteelRecipes(RecipeOutput output) {
-        super(null, output);
+    public SteelRecipes(HolderLookup.Provider registries, RecipeOutput output) {
+        super(registries, output);
     }
 
     @Override

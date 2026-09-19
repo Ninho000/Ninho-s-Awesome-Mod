@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machine ingredients",
+  "key": {
+    "A": "minecraft:stick",
+    "B": "#ninhosawm:stripped_logs"
+  },
+  "pattern": [
+    " BA",
+    "B B",
+    "AB "
+  ],
+  "result": {
+    "count": 2,
+    "id": "ninhosawm:basic_gears"
+  }
+}

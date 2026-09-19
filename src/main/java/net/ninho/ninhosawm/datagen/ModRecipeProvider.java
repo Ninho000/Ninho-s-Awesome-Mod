@@ -24,10 +24,10 @@ public class ModRecipeProvider extends RecipeProvider {
     }
         @Override
     protected void buildRecipes() {
-        new AwesomeWorldRecipes(output).buildRecipes();
-        new MagMachinesRecipes(output).buildRecipes();
-        new MountRecipes(output).buildRecipes();
-        new SteelRecipes(output).buildRecipes();
+        new AwesomeWorldRecipes(registries, output).buildRecipes();
+        new MagMachinesRecipes(registries, output).buildRecipes();
+        new MountRecipes(registries, output).buildRecipes();
+        new SteelRecipes(registries, output).buildRecipes();
     }
     public static class Runner extends RecipeProvider.Runner {
         public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {

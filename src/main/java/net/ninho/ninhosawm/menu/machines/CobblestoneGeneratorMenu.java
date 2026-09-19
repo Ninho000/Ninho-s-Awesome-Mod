@@ -5,12 +5,13 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import net.ninho.ninhosawm.blockentity.custom.CobblestoneGeneratorEntity;
 import net.ninho.ninhosawm.blockentity.custom.StoneBoilerEntity;
 import net.ninho.ninhosawm.function.customModMenu;
 import net.ninho.ninhosawm.menu.ModMenuTypes;
 
 public class CobblestoneGeneratorMenu extends customModMenu {
-    private final StoneBoilerEntity blockEntity;
+    private final CobblestoneGeneratorEntity blockEntity;
 
     //First builder direction the acess to the blockEnt in "this position"
     public CobblestoneGeneratorMenu(
@@ -19,7 +20,7 @@ public class CobblestoneGeneratorMenu extends customModMenu {
             RegistryFriendlyByteBuf buffer) {
 
         this(containerId,playerInventory,
-                (StoneBoilerEntity) playerInventory.player.
+                (CobblestoneGeneratorEntity) playerInventory.player.
                         level().getBlockEntity(buffer.readBlockPos())
         );
     }
@@ -27,7 +28,7 @@ public class CobblestoneGeneratorMenu extends customModMenu {
     public CobblestoneGeneratorMenu(
             int containerId,
             Inventory playerInventory,
-            StoneBoilerEntity blockEntity) {
+            CobblestoneGeneratorEntity blockEntity) {
         super(ModMenuTypes.COBBLESTONE_GENERATOR_MENU.get(), containerId);
         this.blockEntity = blockEntity;
 

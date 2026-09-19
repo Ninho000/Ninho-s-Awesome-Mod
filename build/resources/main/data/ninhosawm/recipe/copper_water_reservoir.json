@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machine engines",
+  "key": {
+    "A": "minecraft:copper_ingot",
+    "B": "minecraft:water_bucket"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "id": "ninhosawm:copper_water_reservoir"
+  }
+}

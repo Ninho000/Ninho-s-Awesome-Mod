@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machine engines",
+  "key": {
+    "A": "minecraft:furnace",
+    "B": "minecraft:stone_bricks",
+    "C": "minecraft:smooth_stone_slab",
+    "D": "minecraft:iron_ingot",
+    "E": "ninhosawm:basic_gears"
+  },
+  "pattern": [
+    "EDE",
+    "BAB",
+    "CCC"
+  ],
+  "result": {
+    "id": "ninhosawm:stone_boiler"
+  }
+}

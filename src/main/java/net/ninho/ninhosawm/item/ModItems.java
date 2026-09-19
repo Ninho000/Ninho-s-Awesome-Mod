@@ -20,15 +20,6 @@ public class ModItems {
     //Gears
     public static final DeferredItem<Item> BASIC_GEARS = ITEMS.registerItem("basic_gears",
             properties -> new ToolTip.item(properties, "basic_gears"));
-    //Containers
-    public static final DeferredItem<Item> FLUID_CONTAINER = ITEMS.registerItem("fluid_container",
-            properties -> new ToolTip.item(properties, "fluid_container"));
-    //Motors
-    public static final DeferredItem<Item> BOILER = ITEMS.registerItem("boiler",
-            properties -> new ToolTip.item(properties, "boiler"));
-    //Machine Tools
-    public static final DeferredItem<Item> IRON_DRILL = ITEMS.registerItem("iron_drill",
-            properties -> new ToolTip.item(properties, "iron_drill"));
     //Storage-Types
     public static final DeferredItem<Item> BASIC_STORAGE = ITEMS.registerItem("basic_storage",
             properties -> new ToolTip.item(properties, "basic_storage"));

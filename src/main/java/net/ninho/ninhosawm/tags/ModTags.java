@@ -19,6 +19,10 @@ public class ModTags {
 
 
 //=================================================== Blocks =====================================================
+public static final TagKey<Block> STRIPPED_LOGS =
+        createBlockTag("stripped_logs");
+    public static final TagKey<Item> STRIPPED_LOGS_ITEMS =
+            createItemTag("stripped_logs");
 
 
 

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machine engines",
+  "key": {
+    "A": "minecraft:water_bucket",
+    "B": "minecraft:lava_bucket",
+    "C": "minecraft:hopper_minecart",
+    "D": "minecraft:glass",
+    "E": "minecraft:stone_bricks",
+    "F": "minecraft:chest"
+  },
+  "pattern": [
+    "DDD",
+    "ACB",
+    "EFE"
+  ],
+  "result": {
+    "id": "ninhosawm:cobblestone_generator"
+  }
+}

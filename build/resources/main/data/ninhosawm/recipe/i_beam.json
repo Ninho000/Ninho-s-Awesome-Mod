@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "machine ingredients",
+  "key": {
+    "A": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    "AAA",
+    " A ",
+    "AAA"
+  ],
+  "result": {
+    "count": 6,
+    "id": "ninhosawm:i_beam"
+  }
+}

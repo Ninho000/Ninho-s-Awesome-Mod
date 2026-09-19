@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond_miner": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ninhosawm:iron_miner"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ninhosawm:diamond_miner"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_diamond_miner"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ninhosawm:diamond_miner"
+    ]
+  }
+}
